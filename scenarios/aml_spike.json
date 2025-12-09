@@ -1,0 +1,25 @@
+{
+  "name": "AML Spike",
+  "duration_minutes": 60,
+  "cus": 25,
+  "structuring": {
+    "accounts": 200,
+    "tx_per_account": 20,
+    "amount_range": [800, 990],
+    "tx_interval_seconds": 60
+  },
+  "funnel_accounts": {
+    "accounts": 10,
+    "inflows_per_account": 200,
+    "outflow_pattern": "single_large",
+    "outflow_multiplier": 0.9
+  },
+  "high_risk_corridors": {
+    "tx_count": 3000,
+    "jurisdictions": ["X1", "X2", "X3"]
+  },
+  "expected_outcome": {
+    "aml_cases_min": 50,
+    "sar_candidates_min": 10
+  }
+}

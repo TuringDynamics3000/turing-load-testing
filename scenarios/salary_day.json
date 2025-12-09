@@ -1,0 +1,33 @@
+{
+  "name": "Salary Day Surge",
+  "duration_minutes": 120,
+  "cus": 25,
+  "phases": [
+    {
+      "label": "Pre-surge",
+      "duration_minutes": 15,
+      "tps": 200
+    },
+    {
+      "label": "Salary peak",
+      "duration_minutes": 30,
+      "tps": 1500
+    },
+    {
+      "label": "Bills & transfers",
+      "duration_minutes": 45,
+      "tps": 800
+    },
+    {
+      "label": "Evening tail",
+      "duration_minutes": 30,
+      "tps": 300
+    }
+  ],
+  "mix": {
+    "payroll_batch": 0.4,
+    "bill_payment": 0.3,
+    "p2p_transfer": 0.2,
+    "card_auth": 0.1
+  }
+}

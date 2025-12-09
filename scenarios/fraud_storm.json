@@ -1,0 +1,17 @@
+{
+  "name": "Fraud Storm",
+  "duration_minutes": 30,
+  "cus": 25,
+  "target_cus": [3, 7, 11],
+  "base_tps": 300,
+  "storm_tps": 2000,
+  "storm_start_minute": 5,
+  "storm_duration_minutes": 10,
+  "patterns": {
+    "rapid_small_payments": 0.5,
+    "new_device_high_amount": 0.2,
+    "geo_jump": 0.2,
+    "mcc_risk_cluster": 0.1
+  },
+  "expected_risk_band": "CRITICAL"
+}
