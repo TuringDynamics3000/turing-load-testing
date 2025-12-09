@@ -1,0 +1,2 @@
+﻿aiokafka==0.8.1
+kafka-python==2.0.2
